@@ -1,0 +1,205 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  position:relative;
+  width: 100%;
+  height:100%;
+  z-index: 2;
+  background:#222;
+  display: flex;
+  justify-content: flex-start;
+}
+.header{
+  width: 100%;
+  flex: 2;
+  /* background: skyblue; */
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333;
+  background-image:url(http://localhost:3000/data/userBg.png);
+  background-size: 100% auto;
+}
+.header .user{
+ height: 300rpx;
+ flex: 1;
+ /* background:wheat;  */
+ position: relative
+}
+.header .user image{
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  width: 150rpx;
+  height:150rpx;
+  border-radius: 50%;
+  border: 8rpx solid #eee;
+}
+.header .user .userName{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+.header .upUserData{
+ height: 100%;
+ flex: 2;
+ /* background: yellowgreen; */
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ text-align: center;
+ color: #eee;
+ line-height: 100rpx;
+ font-size: 35rpx;
+ font-weight: bold;
+ position: relative;
+}
+.header .upUserData .upData{
+  height: 100rpx;
+  flex: 3;
+  background: rgba(255,255,255,.2);
+  border-radius: 10rpx;
+  margin: 40rpx 15rpx;
+}
+.header .upUserData .setVideo{
+  height: 100rpx;
+  flex: 2;
+  margin-right: 15rpx;
+  border-radius: 10rpx;
+  background: rgba(255,255,255,.2);
+}
+.header .upUserData .login-out{
+  position: absolute;
+  width: 35rpx;
+  height: 35rpx;
+  right: 15rpx;
+  top:0;
+  font-size: 25rpx;
+}
+.header .upUserData .login-out image{
+  width: 100%;
+  height: 100%;
+}
+
+.center{
+  width: 100%;
+  height: 180rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #333;
+  padding-left: 60rpx;
+  margin: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  /* background: tomato; */
+}
+.center .userSay{
+  display: block;
+  height: 50rpx;
+  width: 70%;
+  /* background: skyblue; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #eee;
+  font-size: 25rpx;
+}
+.center .userTags{
+ width: 100%;
+ height: 80rpx;
+ /* background: yellowgreen; */
+ white-space: nowrap;
+ /* padding-bottom: 20rpx; */
+ box-sizing: border-box;
+}
+
+.center .userTags text{
+  display: inline-block;
+  padding: 10rpx;
+  background: rgba(255,255,255,.1);
+  border-radius: 30rpx;
+  color: #eee;
+  font-size: 25rpx;
+  margin: 10rpx 10rpx 0 0;
+}
+
+.bottom{
+  width: 100%;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  border-right: 2rpx solid transparent;
+  padding: 0 20rpx 0 20rpx;
+  box-sizing: border-box;
+}
+
+.bottom .tab{
+ width: 100%;
+ height: 100rpx;
+ padding: 0 10rpx 0 10rpx;
+ box-sizing: border-box;
+}
+
+.bottom .tab>view{
+  display: inline-block;
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #ccc;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.myVideos{
+   border-bottom: 4rpx solid yellow;
+}
+.likeVideos{
+   border-bottom: 4rpx solid yellow;
+}
+
+.bottom .videoList{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  /* justify-content: flex-start; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bottom .videoList .videoItem{
+  display:block;
+  width: 30%;
+  height: 300rpx;
+  background-size: 100%;
+  margin: 10rpx 10rpx;
+  position: relative;
+}
+.bottom .videoList .videoItem image{
+  width: 30rpx;
+  height: 30rpx;
+  /* background: red; */
+  position: absolute;
+  left: 20rpx;
+  bottom: 20rpx;
+}
+.bottom .videoList .videoItem text{
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 25rpx;
+  color: #eee;
+  /* background: red; */
+  position: absolute;
+  left: 55rpx;
+  bottom: 20rpx;
+}
+

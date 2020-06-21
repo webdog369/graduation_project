@@ -1,0 +1,62 @@
+<view class="upData">
+  <form bindsubmit="submitUserData"> 
+  <!-- 头像部分 -->
+  <view class="upImg">
+    <view class="userImg" 
+      style=" background-image: url({{userImg}})" 
+      bindtap="changeUserImg">
+      <image src="{{userImg === ''?'/images/camera.png':''}}"></image>
+      <view class="mask"></view>
+    </view>
+    <text>点击更换头像</text>
+  </view>
+  <!-- 其他信息部分 -->
+  <view class="otherData">
+
+    <view class="userName">
+    <text>昵称</text>
+      <input type="text" value="{{userName}}" name="userName"></input>
+    </view>
+
+    <view class="userSex">
+      <view class="section__title">选择性别</view>
+      <picker 
+        bindchange="changeSex"
+        mode="selector"
+        range="{{sex}}"
+        value="{{sexId}}" 
+        name="userSex"
+        >
+      <button class="picker" >
+          {{sex[sexId]}} >
+      </button>
+      </picker>
+    </view>
+
+    <view class="userSay">
+    <text>个人简介</text>
+      <input
+      type="text"
+      name="userSay"
+      value="{{userSay}}" 
+      ></input>
+    </view>
+    
+    <view class="userTag">
+    <text>我的标签</text>
+      <input
+      type="text" 
+      name="userTag"
+      value="{{userTag}}"
+      ></input>
+      <text class="tip">标签之间请用逗号隔开</text>
+    </view>
+  </view>
+  <button 
+  form-type="submit" 
+  type ="default" 
+  class="submit" 
+  disabled="{{subOK}}"
+  >保存</button>
+  </form>
+</view>

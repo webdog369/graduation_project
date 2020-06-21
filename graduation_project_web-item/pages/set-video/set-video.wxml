@@ -1,0 +1,54 @@
+<view class="info">
+  <form bindsubmit="submitData">
+   <view class="addVideo">
+    <view class="myVideo" bindtap="addVideo">
+    <image src="{{videoImgPath}}"></image>
+    <block wx:if="{{!videoImgPath}}">
+      <text>点击添加视频</text>
+    </block>
+    </view>
+   </view>
+    <view class="video-title">
+     <text class="lable">视频标题:</text>
+      <input
+       type="text"
+       name="title" 
+       placeholder="请添加视频标题"
+       value="{{title}}"
+       bindinput="titleValue"
+       ></input>
+    </view>
+    <view class="video-description">
+     <text class="lable">视频描述:</text>
+      <input 
+      type="text" 
+      name="description" 
+      placeholder="请添加视频描述"
+      value="{{description}}"
+      bindinput="descriptionValue"
+      ></input>
+    </view>
+       <view class="video-tag">
+        <text class="lable">视频标签:</text>
+      <input 
+      type="text" 
+      name="tag" 
+      placeholder="请添加视频标签,并且用';'隔开"
+      value="{{tag}}"
+      bindinput="tagValue"
+      ></input>
+    </view>
+    <button 
+    class="{{subFlag?'submit':''}}" 
+    style="margin-top: 50rpx;" 
+    form-type="submit"
+    >发布</button>
+  </form>
+</view>
+
+<!-- 弹窗组件 -->
+<dialog 
+ title="{{errTitle}}"
+ show="{{errTitle}}"
+ msg="确定"
+></dialog>

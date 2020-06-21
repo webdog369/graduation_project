@@ -1,0 +1,8 @@
+<view class="page" wx:if="{{show}}">
+   <view class="dialog">
+      <view  class="title">
+       <text>{{title}}</text>
+     </view>
+      <button class="ok" bindtap="close">{{msg}}</button>
+   </view>
+</view>

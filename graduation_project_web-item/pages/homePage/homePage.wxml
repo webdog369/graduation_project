@@ -1,0 +1,128 @@
+<view class="root">
+
+
+<!-- 首页开始 -->
+  <swiper 
+  vertical="true"
+  bindchange="videoChange"
+  bindanimationfinish="autoPlayVideo"
+  bindtransition="closeComment"
+  >
+  <swiper-item wx:for="{{videos}}" wx:key="title" item-id="{{item._id}}">
+
+  <!-- 视频播放模块  -->
+
+      <video
+     id="{{item._id}}"
+     src="{{item.url}}"
+     object-fit="cover"
+     controls="{{play}}"
+     enable-progress-gesture="{{true}}"
+     show-play-btn="false"
+     play-btn-position='center'
+     show-center-play-btn='{{false}}'
+     bindtouchstart="closeComment"
+     bindtap="playVideo"
+     bindtimeupdate="autoPauseVideo"
+     loop="true"
+      ></video>
+
+      <!-- 右侧交互模块  -->
+
+   <view class="rightMeun">
+      <view class="like"
+       bindtap="likeIt"
+       data-id="{{item.title}}"
+       data-key="{{item._id}}">
+      <image src="{{titles[index].flag?'../../images/like-yes.png':'../../images/like-no.png'}}"
+      ></image>
+      <text>{{titles[index].flag?titles[index].likeNum+1:titles[index].likeNum}}</text>
+      </view>
+      <view class="comments" 
+      bindtap="openComment"
+      data-id="{{item._id}}"
+      >
+      <image src="../../images/comment.png"></image>
+       <text>{{comments.length}}</text>
+      </view>
+       <view class="share">
+      <image src="../../images/share.png"></image>
+       <text>{{item.shareNum}}</text>
+      </view>
+   </view>
+
+   <!-- 评论模块  -->
+      <scroll-view
+       class="{{(commentShow)?'readComment':'readCommentClose'}}"
+       scroll-y="{{true}}"
+       scroll-top='20rpx'
+       >
+        <view class="comment-item" 
+        wx:for="{{comments}}" 
+        wx:for-item = 'value'
+        wx:key="index">
+          <view class="user">
+          <image src="{{value.userImg}}"></image>
+          <view class="userData">
+           <text class="userName">{{value.userName}}</text>
+           <text class="time">{{value.time}}</text>
+           </view>
+          </view>
+          <view class="commentBottmo">
+              <view class="info">
+                  <text class="msg">{{value.comment}}</text>
+                </view>
+              <view class="up" 
+              bindtap="likeComment" 
+              data-id="{{value._id}}"
+              data-videoId="{{value.videoId}}"
+              data-userId="{{value.userId}}"
+              data-comment="{{value.comment}}"
+              data-time="{{value.time}}"
+              data-likeNum="{{value.likeNum}}"
+              data-index="{{index}}"
+              >
+                <image src="{{commentLikeList[index].flag?'/images/comment-up-yes.png':'/images/comment-up-no.png'}}"></image>
+              <text>{{commentLikeList[index].flag?value.likeNum+1:value.likeNum}}</text>
+              </view>
+          </view>
+           
+        </view>
+      </scroll-view>
+
+      <!-- 发送评论模块  -->
+        <view class="{{commentShow?'say':'say-h'}}">
+          <form bindsubmit="sayComment" data-id="{{index}}">
+            <input
+             name="commontValue" 
+             value="{{inputValue}}"
+             type="text"
+             placeholder='请留下你的精彩评论吧~'
+             bindinput="claerValue"
+             ></input>
+            <button 
+            form-type="submit" 
+            type ="default" 
+            class="submit" >发送</button>
+          </form>
+        </view>
+
+         <!-- 视频详情模块-->
+        <view class="videoMsg">
+          <view class="author">
+          <image src="{{item.authorImg}}"></image>
+          <text>@{{item.author}}</text>
+          </view>
+          <view class="v_title">
+          <text>#{{item.title}}#{{item.description}}</text>
+          </view>
+        </view>
+  </swiper-item>
+ </swiper>
+ 
+ <block wx:if="{{videos == null}}">
+ <view class="floor">
+ <text>暂时还没有作品~</text>
+ </view>
+ </block>
+</view>

@@ -1,0 +1,77 @@
+<scroll-view
+ scroll-y="{{true}}"
+ class="container"
+ enable-flex="true"
+ >
+ <!-- 头部头像部分 -->
+ <view class="header">
+  <view class="user" bindtap="goUpData">
+   <image src="{{userImg}}"></image>
+   <text class="userName">{{userName}}</text>
+  </view>
+  <view class="upUserData">
+   <navigator 
+   class="upData"
+   url="#"
+   bindtap="upData"
+    >编辑资料</navigator>
+   <navigator class="setVideo" url="#"  bindtap="setVideo">发布作品</navigator>
+   <navigator 
+   class="login-out"
+   url="#"
+   bindtap="loginOut"
+   >
+    <image src="/images/login-out.png"></image>
+   </navigator>
+  </view>
+</view>
+
+<!-- 中间简介部分 -->
+<view class="center">
+<text class="userSay">{{userSay}}</text>
+<scroll-view class="userTags" scroll-x="{{true}}" >
+  <text wx:for="{{userTag}}" wx:key="index">{{item}}</text>
+</scroll-view>
+</view>
+
+<!-- 底部作品部分 -->
+<view class="bottom">
+    <!-- tab选项卡 -->
+    <view class="tab">
+      <view
+       class="{{currentTab ==='myVideos'?'myVideos':''}}" 
+       data-id='myVideos' 
+       bindtap="myVideos"
+       >作品 {{myVideos.length}}</view>
+      <view 
+       class="{{currentTab ==='likeVideos'?'likeVideos':''}}" 
+       data-id='likeVideos'
+       bindtap="likeVideos">
+       喜欢 {{likeVideos.length}}</view>
+    </view>
+
+      <!-- 作品展示 -->
+     
+       <view class="videoList">
+          <block wx:for="{{currentTab ==='myVideos'?myVideos:likeVideos}}" wx:key='index'>
+            <navigator
+             class="videoItem" 
+             url="#" 
+             style="background-image:url({{item.videoImg}});"
+             bindtap="showVideo"
+             data-url='{{item.url}}'
+             >
+            <image src="/images/playBtn.png"></image>
+            <text>{{item.likeNum}}</text>
+            </navigator>
+            </block>
+            <!-- 调节布局所用的动态模块 -->
+            <navigator
+             class="videoItem"
+             wx:if="{{myVideos.length % 3 === 2 || likeVideos.length % 3 === 2}}"
+             url="#"
+             ></navigator>
+       </view>
+
+  </view>
+</scroll-view>

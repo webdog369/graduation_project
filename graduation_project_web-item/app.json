@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/register/register",
+    "pages/homePage/homePage",
+    "pages/set-video/set-video",
+    "pages/index/index",
+    "pages/show-video/show-video",
+    "pages/up-data/up-data",
+    "pages/components/Dialog"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#222",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#222",
+    "color": "#777",
+    "selectedColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "iconPath": "images/shouye1.png",
+        "selectedIconPath": "images/shouye2.png",
+        "text": "首页推荐"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/grzx1.png",
+        "selectedIconPath": "images/grzx2.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

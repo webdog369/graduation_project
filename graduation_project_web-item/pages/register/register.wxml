@@ -1,0 +1,57 @@
+<!-- 注册界面/登录界面 -->
+  <view class="root"
+    style="{{isRegister?'background-image:url(http://localhost:3000/data/regBg.png)   ':'background-image:url(http://localhost:3000/data/loginBg.png)'}};"
+  >
+   <view class="info">
+  <!-- 头像 -->
+   <navigator url="#"
+    class="userImg"
+    hover-class="none"
+    >
+   <image src="/images/userImg.png"></image>
+   </navigator>
+  <!-- 信息填写界面 -->
+  <view class="userData">
+   <form bindsubmit="{{isRegister?'submitData':'submitDataLogin'}}">
+    <view class="userName">
+     <image src="/images/userName.png"></image>
+     <input type="text" 
+      name="userName"
+      placeholder="请输入用户名"
+      maxlength="8"
+      bindinput="userNameValue"
+      value="{{userName}}"
+      ></input>
+    </view>
+    <view class="password">
+     <image src="/images/password.png"></image>
+     <input type="password"
+      name="password"
+      placeholder="请输入密码"
+      bindinput="passwordValue"
+      value="{{password}}"
+      ></input>
+    </view>
+    <button 
+    form-type="submit" 
+    disabled="{{!(userName&&password.length>=6)}}"
+    class="{{!(userName&&password.length>=6)?'buttonNo':'buttonYes'}}"
+    >{{isRegister?'注册':'登录'}}</button>
+   </form>
+    <view class="goReg" bindtap="{{isRegister?'goLogin':'goReg'}}">
+      <text>{{isRegister?'已有帐号?':'没有帐号?'}}</text>
+      <text>{{isRegister?'去登录':'去注册'}}</text>
+     </view>
+    </view>
+    </view>
+  </view>
+
+<!-- 弹窗组件 -->
+<dialog 
+ title="{{errTitle}}"
+ show="{{errTitle}}"
+ msg="{{msg}}"
+></dialog>
+
+
+

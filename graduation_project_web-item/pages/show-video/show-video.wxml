@@ -1,0 +1,11 @@
+<view>
+  <video
+     src="{{url}}"
+     object-fit="cover"
+     enable-progress-gesture="{{true}}"
+     show-play-btn="false"
+     play-btn-position='center'
+     show-center-play-btn='{{false}}'
+     autoplay="{{true}}"
+  ></video>
+</view>
