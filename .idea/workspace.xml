@@ -43,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592791211053</updated>
-      <workItem from="1592791216245" duration="3735000" />
+      <workItem from="1592791216245" duration="4056000" />
     </task>
     <task id="LOCAL-00001" summary="添加了test文件">
       <created>1592792848214</created>
@@ -66,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592802525623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新了系统说明文档的图片包">
+      <created>1592802820534</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592802820534</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,10 +87,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="更新了系统说明文档的图片包" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1592802524016">
+    <state x="320" y="0" key="CommitChangelistDialog2" timestamp="1592802818502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592802524016" />
+    <state x="320" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592802818502" />
     <state x="147" y="64" key="DiffContextDialog" timestamp="1592801762322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -92,5 +99,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592802533088" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1592802636384">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592802636384" />
   </component>
 </project>
