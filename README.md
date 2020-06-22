@@ -32,13 +32,11 @@
 
 ***\*1.2\****  ***\*系统运行结果及说明\****
 
-注册功能测试如图5.1所示：
+注册功能测试如图1.1所示：
 
- 
+![](C:\Users\Hasee\Desktop\github-graduation_project\graduation_project\md-images\wps1.jpg)
 
-<image src="./md-images/wps1.jpg"></image>
 
- 
 
 图1.1 注册界面
 
