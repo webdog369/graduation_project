@@ -36,7 +36,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps1.jpg) 
+<image src="./md-images/wps1.jpg"></image>
 
  
 
