@@ -8,7 +8,7 @@
 
 ### ☞系统测试结果
 
-**\*1.1\***  **\*系统测试用例\***
+***1.1 系统测试用例***
 
 在本系统中，我们将对在前几章中提到的大部分内容进行功能测试，还会在测试之后给出效果图，具体测试项目如下：
 
@@ -30,11 +30,11 @@
 
  
 
-***\*1.2\****  ***\*系统运行结果及说明\****
+***1.2 系统运行结果及说明***
 
 注册功能测试如图1.1所示：
 
-![](C:\Users\Hasee\Desktop\github-graduation_project\graduation_project\md-images\wps1.jpg)
+![msg](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps1.jpg?raw=true)
 
 
 
@@ -48,7 +48,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps2.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps2.jpg?raw=true) 
 
 图1.2 数据库中的用户信息
 
@@ -58,7 +58,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps3.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps3.jpg?raw=true) 
 
  
 
@@ -70,7 +70,7 @@
 
 用户在登录成功后会调整转到首页，若首页有作品则如图5.4所示：
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps4.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps4.jpg?raw=true) 
 
  
 
@@ -80,7 +80,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps5.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps5.jpg?raw=true) 
 
  
 
@@ -90,7 +90,7 @@
 
 用户在评论在数据库中的格式如图1.6所示：
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps6.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps6.jpg?raw=true) 
 
  
 
@@ -102,7 +102,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps7.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps7.jpg?raw=true) 
 
  
 
@@ -114,7 +114,7 @@
 
 用户在修改个人信息界面效果如图1.8所示：
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps8.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps8.jpg?raw=true) 
 
  
 
@@ -126,7 +126,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps9.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps9.jpg?raw=true) 
 
 图1.9 从本地选择头像
 
@@ -136,7 +136,7 @@
 
 用户在填写完个人信息后效果如图1.10所示：
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps10.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps10.jpg?raw=true) 
 
  
 
@@ -148,7 +148,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps11.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps11.jpg?raw=true) 
 
  
 
@@ -158,7 +158,7 @@
 
 用户更新后的信息在数据库中的表现如图1.12所示：
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps12.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps12.jpg?raw=true) 
 
 图1.12 数据库中用户更新完的资料
 
@@ -170,7 +170,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps13.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps13.jpg?raw=true) 
 
  
 
@@ -182,7 +182,7 @@
 
 用户在填写完即将发布的作品数据时后，若视频地址和视频标题等两个重要信息都存在，则发布按钮就会被激活，若少了其中一个信息，发布按钮就是未激活的灰色状态。具体效果如图5.14所示：
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps14.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps14.jpg?raw=true) 
 
  
 
@@ -194,7 +194,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps15.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps15.jpg?raw=true) 
 
  
 
@@ -208,7 +208,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps16.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps16.jpg?raw=true) 
 
  
 
@@ -220,7 +220,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps17.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps17.jpg?raw=true) 
 
  
 
@@ -234,7 +234,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps18.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps18.jpg?raw=true) 
 
  
 
@@ -246,7 +246,7 @@
 
  
 
-![img](file:///C:\Users\Hasee\AppData\Local\Temp\ksohtml51236\wps19.jpg) 
+![img](https://github.com/webdog369/README_FILE/blob/master/graduation_project_readme_images/wps19.jpg?raw=true) 
 
  
 
